@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__upper">
+        <div class="header__upper--search">
+          <img src="./assets/icon-search.svg" alt="Search icon">
+          <input type="search">
+        </div>
+        <div class="header__upper--user">
+          <img src="./assets/icon-notification.svg" alt="Notification icon">
+          <img src="./assets/icon-profile.svg" alt="User profile picture" class="user-profile">
+          <p>Morgan Oakley</p>
+        </div>
+      </div>
+      <div class="header__lower">
+        <div class="header__lower--profile">
+          <img src="./assets/icon-profile.svg" alt="Profile image icon" class="user-profile--large">
+          <div class="header__lower--profile-text">
+            <p>Hi there,</p>
+            <h2>Morgan Oakley (@morgan)</h2>
+          </div>
+        </div>
+        <div class="header__lower--buttons">
+          <button type="button" class="header-buttons">New</button>
+          <button type="button" class="header-buttons">Upload</button>
+          <button type="button" class="header-buttons">Share</button>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="./assets/icon-dashboard.svg" alt="Dashboard icon" class="nav-icon">
+        <span class="nav-text">Dashboard</span>
+      </div>
+      <div class="nav__item"></div>
+      <div class="nav__lower"></div>
+    </nav>
+    <main class="main">
+      <div class="main__projects"></div>
+      <aside class="main__announcements"></aside>
+      <aside class="main__trending"></aside>
+    </main>
+  </div>
+</body>
+
+</html>
