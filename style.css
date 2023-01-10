@@ -75,9 +75,10 @@ html {
 
 .header__lower--buttons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, min-content);
   gap: 30px;
   align-content: center;
+  justify-content: end;
   align-items: center;
   justify-items: center;
 }
@@ -146,15 +147,16 @@ html {
   font-size: 26px;
 }
 
-/* MAIN */
+/* MAIN - PROJECTS */
 
 .main {
   grid-column: 2 / -1;
   grid-row: 2 / -1;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 30px 15px;
+  padding: 30px;
   background-color: #dee5ed;
+  gap: 45px;
 }
 
 .main__projects {
@@ -189,4 +191,50 @@ html {
 
 .main__projects--item-icons {
   justify-self: end;
+}
+
+/* MAIN - ANNOUNCEMENTS */
+
+.main__aside--container {
+  display: grid;
+  grid-template-rows: min-content 1fr 1fr;
+  gap: 16px;
+}
+
+.main__announcements--heading {
+  margin-bottom: -5px;
+  align-self: center;
+}
+
+.main__announcements {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.main__announcements--container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+/* 
+.main__announcements--container > div:not(:last-child) {
+  border-bottom: 1px solid #333;
+} */
+
+.main__announcements--item-heading {
+  font-weight: 700;
+}
+
+.main__announcements--container-item p {
+  font-size: 12px;
+  padding-bottom: 12.8px;
+  border-bottom: 1px solid #333;
+}
+
+.main__announcements--container-item:last-child > p {
+  border-bottom: none;
+  padding-bottom: 0;
 }
