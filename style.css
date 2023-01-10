@@ -6,7 +6,7 @@
 
 .container {
   height: 100vh;
-  width: 1080px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
@@ -21,9 +21,11 @@ html {
 /* HEADER */
 
 .header {
+  padding: 15px 30px;
   grid-column: 2 / -1;
   display: grid;
   grid-template-rows: 1fr 1.5fr;
+  box-shadow: 0 4px 5px -2px #aaa;
 }
 
 .header__upper {
@@ -142,4 +144,49 @@ html {
 
 .nav-text {
   font-size: 26px;
+}
+
+/* MAIN */
+
+.main {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 30px 15px;
+  background-color: #dee5ed;
+}
+
+.main__projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: min-content;
+  grid-auto-rows: minmax(min-content, 1fr);
+  gap: 15px;
+}
+
+.main__projects--header {
+  grid-column: 1 / -1;
+  align-self: center;
+  margin-bottom: -5px;
+}
+
+.main__projects--item {
+  padding: 30px;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  align-content: space-between;
+  gap: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-left: 8px solid #eaa843;
+}
+
+.main__projects--item-text > p {
+  font-size: 14px;
+  color: #777;
+}
+
+.main__projects--item-icons {
+  justify-self: end;
 }
