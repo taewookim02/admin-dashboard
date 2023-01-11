@@ -206,6 +206,13 @@ input[type="search"] {
   border-left: 8px solid #eaa843;
 }
 
+.link-icons:hover {
+  filter: brightness(600%);
+}
+.link-icons:active {
+  filter: brightness(10%);
+}
+
 .main__projects--item-text > p {
   font-size: 14px;
   color: #777;
@@ -214,7 +221,12 @@ input[type="search"] {
 .main__projects--item-icons {
   justify-self: end;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.main__projects--item-text {
+  display: grid;
   gap: 15px;
 }
 
@@ -233,7 +245,7 @@ input[type="search"] {
 
 .main__announcements {
   background-color: #fff;
-  padding: 30px;
+  padding: 15px 30px;
   border-radius: 5px;
 }
 
@@ -306,4 +318,8 @@ input[type="search"] {
 .main__trending--textbox p {
   font-size: 13px;
   color: #777;
+}
+
+.user-name {
+  font-weight: 500;
 }
