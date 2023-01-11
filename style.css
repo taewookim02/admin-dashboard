@@ -252,9 +252,6 @@ input[type="search"] {
   font-size: 15px;
 }
 
-.main__announcements--container-item {
-}
-
 .main__announcements--container-item:first-child::after,
 .main__announcements--container-item:nth-child(2)::after {
   content: "";
