@@ -5,7 +5,6 @@
 }
 
 /* TODO: header styling */
-/* FIXME: between borders not aligning at the center */
 /* TODO: add content to the items, maybe link up my work? */
 
 .container {
@@ -40,24 +39,43 @@ html {
 
 .header__upper--search {
   display: grid;
-  grid-template-columns: 0.5fr 5fr;
+  grid-template-columns: min-content 1fr;
   align-content: center;
   align-items: center;
 }
 
+.header__upper--search > img {
+  justify-self: end;
+  margin-right: 10px;
+}
+
+input[type="search"] {
+  background-color: #dee5ed;
+  border: none;
+  height: 100%;
+  border-radius: 50px;
+}
+
 .header__upper--user {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: repeat(3, min-content);
+  gap: 20px;
   align-items: center;
   justify-items: center;
+  white-space: nowrap;
+  justify-content: end;
 }
 
 [alt$="icon"] {
   width: 25px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .user-profile {
   width: 50px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .user-profile--large {
@@ -72,7 +90,7 @@ html {
 
 .header__lower--profile {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: min-content 5fr;
   align-items: center;
   gap: 15px;
 }
